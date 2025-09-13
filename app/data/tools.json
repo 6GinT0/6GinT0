@@ -1,0 +1,834 @@
+{
+  "es": {
+    "tools": [
+      {
+        "group": "WordPress",
+        "items": [
+          {
+            "name": "MagicWP",
+            "description": "Herramientas potentes para asistentes de WordPress",
+            "link": "https://magicwptools.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Development"]
+          },
+          {
+            "name": "WP Academy",
+            "description": "Cursos online gratuitos con certificados. Aprende programación, diseño web, desarrollo web, marketing digital y SEO en urdu e hindi gratis",
+            "link": "https://wpacademy.pk/courses/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress"]
+          },
+          {
+            "name": "WPMade",
+            "description": "Descubre los mejores sitios de la semana e inspírate con una selección cuidadosamente curada de los mejores sitios WordPress",
+            "link": "https://wpmade.design/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Inspiración"]
+          },
+          {
+            "name": "WPPB",
+            "description": "Generador de boilerplate para plugins de WordPress. Escribe los detalles de tu plugin en el formulario y se generará un archivo zip para ti.",
+            "link": "https://wppb.me/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Development"]
+          },
+          {
+            "name": "WordPress Developer Reference",
+            "description": "Referencia oficial para desarrolladores de WordPress con documentación completa de funciones y APIs",
+            "link": "https://developer.wordpress.org/reference/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress"]
+          },
+          {
+            "name": "WordPress Theme Structure",
+            "description": "Guía sobre la estructura y conceptos principales de los temas de WordPress",
+            "link": "https://developer.wordpress.org/themes/core-concepts/theme-structure/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Themes"]
+          },
+          {
+            "name": "WordPress Plugins",
+            "description": "Documentación oficial para la creación y gestión de plugins en WordPress",
+            "link": "https://developer.wordpress.org/plugins/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugins"]
+          },
+          {
+            "name": "WP Scripts Developer Guide",
+            "description": "Guía para comenzar con WP Scripts y el desarrollo de bloques en WordPress",
+            "link": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Block Editor"]
+          },
+          {
+            "name": "Advanced Custom Fields",
+            "description": "Recursos y documentación para trabajar con el plugin Advanced Custom Fields en WordPress",
+            "link": "https://www.advancedcustomfields.com/resources/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugins"]
+          },
+          {
+            "name": "Elementor Developers",
+            "description": "Documentación y guías oficiales para desarrolladores que trabajan con Elementor",
+            "link": "https://developers.elementor.com/docs/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Elementor"]
+          },
+          {
+            "name": "WooCommerce Developers",
+            "description": "Documentación oficial para desarrolladores de WooCommerce",
+            "link": "https://developer.woocommerce.com/docs/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "E-commerce"]
+          },
+          {
+            "name": "PRO Elements",
+            "description": "Plugin gratuito de WordPress que habilita funciones PRO en el constructor de páginas Elementor, con actualizaciones automáticas.",
+            "link": "https://proelements.org/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugin", "Elementor"]
+          }
+        ]
+      },
+      {
+        "group": "SEO",
+        "items": [
+          {
+            "name": "Google Search Console",
+            "description": "Podrás medir el rendimiento y el tráfico de búsqueda de tu sitio web, corregir problemas y conseguir que tu sitio web destaque",
+            "link": "https://search.google.com/search-console/about",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO"]
+          },
+          {
+            "name": "Google Analytics",
+            "description": "Herramienta de análisis web que permite medir y entender el tráfico de tu sitio",
+            "link": "https://tagmanager.google.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO"]
+          },
+          {
+            "name": "PageSpeed Insights",
+            "description": "Herramienta de Google que analiza el rendimiento de tu sitio web y ofrece recomendaciones para mejorar la velocidad y experiencia del usuario",
+            "link": "https://pagespeed.web.dev/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO", "Performance"]
+          },
+          {
+            "name": "Google Trends",
+            "description": "Herramienta de Google que permite analizar la popularidad de términos de búsqueda a lo largo del tiempo e identificar tendencias emergentes",
+            "link": "https://trends.google.es/trends/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO", "Marketing"]
+          },
+          {
+            "name": "Markethax",
+            "description": "Herramienta que proporciona recursos para complementar sitios web. Todas las herramientas son gratuitas y de uso libre.",
+            "link": "https://markethax.com/herramientas/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Herramientas", "Web"]
+          }
+        ]
+      },
+      {
+        "group": "Productividad",
+        "items": [
+          {
+            "name": "n8n",
+            "description": "Herramienta de automatización de flujos de trabajo que permite conectar aplicaciones y servicios para crear procesos automatizados sin código",
+            "link": "https://n8n.io/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Make",
+            "description": "Plataforma de automatización que permite conectar aplicaciones y servicios para crear flujos de trabajo automatizados sin código",
+            "link": "https://www.make.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Zapier",
+            "description": "Plataforma de automatización que conecta aplicaciones y servicios para crear flujos de trabajo automatizados sin código",
+            "link": "https://zapier.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Brevo",
+            "description": "Plataforma de email marketing y automatización que permite crear campañas personalizadas y gestionar contactos de forma eficiente",
+            "link": "https://www.brevo.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Marketing", "Email"]
+          },
+          {
+            "name": "MailerLite",
+            "description": "Plataforma de email marketing y automatización que permite crear campañas, gestionar suscriptores y seguir métricas fácilmente",
+            "link": "https://www.mailerlite.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Marketing", "Email"]
+          },
+          {
+            "name": "Unsplash",
+            "description": "Plataforma gratuita de fotos de alta calidad que permite a los usuarios descargar, usar y compartir imágenes para cualquier propósito",
+            "link": "https://unsplash.com",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Recursos", "Imágenes"]
+          },
+          {
+            "name": "Squoosh",
+            "description": "Herramienta online gratuita de Google que permite comprimir y optimizar imágenes sin pérdida significativa de calidad",
+            "link": "https://squoosh.app/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Imágenes", "Optimización"]
+          },
+          {
+            "name": "Pexels",
+            "description": "Plataforma gratuita de fotos y videos de alta calidad que permite a los usuarios descargar, usar y compartir contenido para cualquier propósito",
+            "link": "https://www.pexels.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Recursos", "Imágenes", "Videos"]
+          },
+          {
+            "name": "Envato Elements",
+            "description": "Plataforma de suscripción que ofrece millones de recursos creativos, como plantillas, fotos, gráficos y videos, para uso personal y comercial",
+            "link": "https://elements.envato.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Recursos", "Creatividad", "Plantillas"]
+          },
+          {
+            "name": "Inspiración Desarrollo Web",
+            "description": "Una lista de recursos y referencias para inspirarse en desarrollo web, incluyendo ejemplos de diseño, componentes y tendencias.",
+            "link": "https://docs.google.com/document/d/truesk6PrtopvESO2UcqpCeQdfalseCxaRIksGeJu62qAfXOgcs/edit?usp=sharing",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Inspiración", "Recursos"]
+          },
+          {
+            "name": "Hostinger",
+            "description": "Proveedor de hosting web con planes compartidos, VPS y WordPress",
+            "link": "https://www.hostinger.com",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Hosting"]
+          },
+          {
+            "name": "InfinityFree",
+            "description": "Servicio de hosting gratuito para proyectos web",
+            "link": "https://www.infinityfree.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Hosting"]
+          }
+        ]
+      },
+      {
+        "group": "Frontend",
+        "items": [
+          {
+            "name": "MDN Blog",
+            "description": "Blog oficial de MDN Web Docs que publica noticias, tutoriales y perspectivas sobre el desarrollo web, complementando la documentación técnica existente.",
+            "link": "https://developer.mozilla.org/en-US/blog/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Blog", "Documentación"]
+          },
+          {
+            "name": "GSAP",
+            "description": "Biblioteca JavaScript de animación de alto rendimiento que permite crear animaciones complejas en la web con facilidad",
+            "link": "https://gsap.com/docs/v3/Installation/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Animation", "Frontend"]
+          },
+          {
+            "name": "Aceternity UI",
+            "description": "Biblioteca de componentes y herramientas para crear interfaces de usuario consistentes y modernas con facilidad",
+            "link": "https://ui.aceternity.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["UI", "Frontend"]
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "tools": [
+      {
+        "group": "WordPress",
+        "items": [
+          {
+            "name": "MagicWP",
+            "description": "Powerful Tools for WordPress Wizards",
+            "link": "https://magicwptools.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Development"]
+          },
+          {
+            "name": "WP Academy",
+            "description": "Free online courses with certificates. Learn Programming, Web Design, Web Development, Digital Marketing & SEO in Urdu & Hindi Language for free",
+            "link": "https://wpacademy.pk/courses/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress"]
+          },
+          {
+            "name": "WPMade",
+            "description": "Discover the best sites for this week and get inspired by a carefully curated selection of top WordPress websites",
+            "link": "https://wpmade.design/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Inspiration"]
+          },
+          {
+            "name": "WPPB",
+            "description": "WordPress plugin boilerplate generator. Type your plugin details in the form below, and a zip file will be generated for you.",
+            "link": "https://wppb.me/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Development"]
+          },
+          {
+            "name": "WordPress Developer Reference",
+            "description": "Official reference for WordPress developers with full documentation of functions and APIs",
+            "link": "https://developer.wordpress.org/reference/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress"]
+          },
+          {
+            "name": "WordPress Theme Structure",
+            "description": "Guide on the main concepts and structure of WordPress themes",
+            "link": "https://developer.wordpress.org/themes/core-concepts/theme-structure/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Themes"]
+          },
+          {
+            "name": "WordPress Plugins",
+            "description": "Official documentation for creating and managing WordPress plugins",
+            "link": "https://developer.wordpress.org/plugins/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugins"]
+          },
+          {
+            "name": "WP Scripts Developer Guide",
+            "description": "Guide to get started with WP Scripts and WordPress block development",
+            "link": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Block Editor"]
+          },
+          {
+            "name": "Advanced Custom Fields",
+            "description": "Resources and documentation for working with the Advanced Custom Fields plugin in WordPress",
+            "link": "https://www.advancedcustomfields.com/resources/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugins"]
+          },
+          {
+            "name": "Elementor Developers",
+            "description": "Official documentation and guides for developers working with Elementor",
+            "link": "https://developers.elementor.com/docs/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Elementor"]
+          },
+          {
+            "name": "WooCommerce Developers",
+            "description": "Official documentation for WooCommerce developers",
+            "link": "https://developer.woocommerce.com/docs/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "E-commerce"]
+          },
+          {
+            "name": "PRO Elements",
+            "description": "Free WordPress plugin that enables PRO features in the Elementor page builder, with automatic updates.",
+            "link": "https://proelements.org/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugin", "Elementor"]
+          }
+        ]
+      },
+      {
+        "group": "SEO",
+        "items": [
+          {
+            "name": "Google Search Console",
+            "description": "You'll be able to measure your website's performance and search traffic, fix issues, and make your website stand out",
+            "link": "https://search.google.com/search-console/about",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO"]
+          },
+          {
+            "name": "Google Analytics",
+            "description": "Web analytics tool that allows you to measure and understand your site's traffic",
+            "link": "https://tagmanager.google.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO"]
+          },
+          {
+            "name": "Pagespeed Insights",
+            "description": "Google tool that analyzes your website performance and provides recommendations to improve speed and user experience",
+            "link": "https://pagespeed.web.dev/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO", "Performance"]
+          },
+          {
+            "name": "Google Trends",
+            "description": "Google tool that allows you to analyze the popularity of search terms over time and identify emerging trends",
+            "link": "https://trends.google.es/trends/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO", "Marketing"]
+          },
+          {
+            "name": "Markethax",
+            "description": "Tool that provides resources to complement websites. All tools are free and open for use.",
+            "link": "https://markethax.com/herramientas/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Tools", "Web"]
+          }
+        ]
+      },
+      {
+        "group": "Productivity",
+        "items": [
+          {
+            "name": "n8n",
+            "description": "Workflow automation tool that allows you to connect apps and services to create automated processes without coding",
+            "link": "https://n8n.io/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Make",
+            "description": "Automation platform that allows you to connect apps and services to create automated workflows without coding",
+            "link": "https://www.make.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Zapier",
+            "description": "Automation platform that connects apps and services to create automated workflows without coding",
+            "link": "https://zapier.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Brevo",
+            "description": "Email marketing and automation platform that allows you to create personalized campaigns and manage contacts efficiently",
+            "link": "https://www.brevo.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Marketing", "Email"]
+          },
+          {
+            "name": "MailerLite",
+            "description": "Email marketing and automation platform that allows you to create campaigns, manage subscribers, and track metrics easily",
+            "link": "https://www.mailerlite.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Marketing", "Email"]
+          },
+          {
+            "name": "Unsplash",
+            "description": "Free high-quality photo platform that allows users to download, use, and share images for any purpose",
+            "link": "https://unsplash.com",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Resources", "Images"]
+          },
+          {
+            "name": "Squoosh",
+            "description": "Free online Google tool that allows you to compress and optimize images without significant quality loss",
+            "link": "https://squoosh.app/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Images", "Optimization"]
+          },
+          {
+            "name": "Pexels",
+            "description": "Free platform for high-quality photos and videos that allows users to download, use, and share content for any purpose",
+            "link": "https://www.pexels.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Resources", "Images", "Videos"]
+          },
+          {
+            "name": "Envato Elements",
+            "description": "Subscription platform that offers millions of creative assets, such as templates, photos, graphics, and videos, for personal and commercial use",
+            "link": "https://elements.envato.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Resources", "Creativity", "Templates"]
+          },
+          {
+            "name": "Web Development Inspiration",
+            "description": "A list of resources and references for web development inspiration, including design examples, components, and trends.",
+            "link": "https://docs.google.com/document/d/truesk6PrtopvESO2UcqpCeQdfalseCxaRIksGeJu62qAfXOgcs/edit?usp=sharing",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Inspiration", "Resources"]
+          },
+          {
+            "name": "Hostinger",
+            "description": "Web hosting provider with shared, VPS and WordPress plans",
+            "link": "https://www.hostinger.com",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Hosting"]
+          },
+          {
+            "name": "InfinityFree",
+            "description": "Free hosting service for web projects",
+            "link": "https://www.infinityfree.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Hosting"]
+          }
+        ]
+      },
+      {
+        "group": "Frontend",
+        "items": [
+          {
+            "name": "MDN Blog",
+            "description": "Official blog of MDN Web Docs publishing news, tutorials, and insights on web development, complementing the existing technical documentation.",
+            "link": "https://developer.mozilla.org/en-US/blog/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Blog", "Documentation"]
+          },
+          {
+            "name": "GSAP",
+            "description": "High-performance JavaScript animation library that allows you to create complex web animations easily",
+            "link": "https://gsap.com/docs/v3/Installation/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Animation", "Frontend"]
+          },
+          {
+            "name": "Aceternity UI",
+            "description": "Component library and toolkit to easily build consistent and modern user interfaces",
+            "link": "https://ui.aceternity.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["UI", "Frontend"]
+          }
+        ]
+      }
+    ]
+  },
+  "br": {
+    "tools": [
+      {
+        "group": "WordPress",
+        "items": [
+          {
+            "name": "MagicWP",
+            "description": "Ferramentas poderosas para assistentes do WordPress",
+            "link": "https://magicwptools.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Development"]
+          },
+          {
+            "name": "WP Academy",
+            "description": "Cursos online gratuitos com certificados. Aprenda programação, web design, desenvolvimento web, marketing digital e SEO em urdu e hindi gratuitamente",
+            "link": "https://wpacademy.pk/courses/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress"]
+          },
+          {
+            "name": "WPMade",
+            "description": "Descubra os melhores sites da semana e inspire-se com uma seleção cuidadosamente curada dos melhores sites WordPress",
+            "link": "https://wpmade.design/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Inspiração"]
+          },
+          {
+            "name": "WPPB",
+            "description": "Gerador de boilerplate para plugins WordPress. Digite os detalhes do seu plugin no formulário e um arquivo zip será gerado para você.",
+            "link": "https://wppb.me/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Development"]
+          },
+          {
+            "name": "WordPress Developer Reference",
+            "description": "Referência oficial para desenvolvedores WordPress com documentação completa de funções e APIs",
+            "link": "https://developer.wordpress.org/reference/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress"]
+          },
+          {
+            "name": "WordPress Theme Structure",
+            "description": "Guia sobre a estrutura e conceitos principais dos temas do WordPress",
+            "link": "https://developer.wordpress.org/themes/core-concepts/theme-structure/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Themes"]
+          },
+          {
+            "name": "WordPress Plugins",
+            "description": "Documentação oficial para criação e gerenciamento de plugins no WordPress",
+            "link": "https://developer.wordpress.org/plugins/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugins"]
+          },
+          {
+            "name": "WP Scripts Developer Guide",
+            "description": "Guia para começar com WP Scripts e desenvolvimento de blocos no WordPress",
+            "link": "https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-scripts/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Block Editor"]
+          },
+          {
+            "name": "Advanced Custom Fields",
+            "description": "Recursos e documentação para trabalhar com o plugin Advanced Custom Fields no WordPress",
+            "link": "https://www.advancedcustomfields.com/resources/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugins"]
+          },
+          {
+            "name": "Elementor Developers",
+            "description": "Documentação e guias oficiais para desenvolvedores que trabalham com Elementor",
+            "link": "https://developers.elementor.com/docs/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Elementor"]
+          },
+          {
+            "name": "WooCommerce Developers",
+            "description": "Documentação oficial para desenvolvedores WooCommerce",
+            "link": "https://developer.woocommerce.com/docs/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "E-commerce"]
+          },
+          {
+            "name": "PRO Elements",
+            "description": "Plugin gratuito do WordPress que habilita recursos PRO no construtor de páginas Elementor, com atualizações automáticas.",
+            "link": "https://proelements.org/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["WordPress", "Plugin", "Elementor"]
+          }
+        ]
+      },
+      {
+        "group": "SEO",
+        "items": [
+          {
+            "name": "Google Search Console",
+            "description": "Você poderá medir o desempenho e o tráfego de pesquisa do seu site, corrigir problemas e fazer com que seu site se destaque",
+            "link": "https://search.google.com/search-console/about",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO"]
+          },
+          {
+            "name": "Google Analytics",
+            "description": "Ferramenta de análise da web que permite medir e entender o tráfego do seu site",
+            "link": "https://tagmanager.google.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO"]
+          },
+          {
+            "name": "Pagespeed Insights",
+            "description": "Ferramenta do Google que analisa a performance do seu site e oferece recomendações para melhorar a velocidade e experiência do usuário",
+            "link": "https://pagespeed.web.dev/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO", "Performance"]
+          },
+          {
+            "name": "Google Trends",
+            "description": "Ferramenta do Google que permite analisar a popularidade de termos de pesquisa ao longo do tempo e identificar tendências emergentes",
+            "link": "https://trends.google.es/trends/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["SEO", "Marketing"]
+          },
+          {
+            "name": "Markethax",
+            "description": "Ferramenta que fornece recursos para complementar sites. Todas as ferramentas são gratuitas e de uso livre.",
+            "link": "https://markethax.com/herramientas/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Herramientas", "Web"]
+          }
+        ]
+      },
+      {
+        "group": "Productividade",
+        "items": [
+          {
+            "name": "n8n",
+            "description": "Ferramenta de automação de fluxo de trabalho que permite conectar aplicativos e serviços para criar processos automatizados sem código",
+            "link": "https://n8n.io/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Make",
+            "description": "Plataforma de automação que permite conectar aplicativos e serviços para criar fluxos de trabalho automatizados sem código",
+            "link": "https://www.make.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Zapier",
+            "description": "Plataforma de automação que conecta aplicativos e serviços para criar fluxos de trabalho automatizados sem código",
+            "link": "https://zapier.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Automation", "Productivity"]
+          },
+          {
+            "name": "Brevo",
+            "description": "Plataforma de email marketing e automação que permite criar campanhas personalizadas e gerenciar contatos de forma eficiente",
+            "link": "https://www.brevo.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Marketing", "Email"]
+          },
+          {
+            "name": "MailerLite",
+            "description": "Plataforma de email marketing e automação que permite criar campanhas, gerenciar assinantes e acompanhar métricas facilmente",
+            "link": "https://www.mailerlite.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Marketing", "Email"]
+          },
+          {
+            "name": "Unsplash",
+            "description": "Plataforma gratuita de fotos de alta qualidade que permite aos usuários baixar, usar e compartilhar imagens para qualquer finalidade",
+            "link": "https://unsplash.com",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Recursos", "Imagens"]
+          },
+          {
+            "name": "Squoosh",
+            "description": "Ferramenta online gratuita do Google que permite comprimir e otimizar imagens sem perda significativa de qualidade",
+            "link": "https://squoosh.app/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Imagens", "Otimização"]
+          },
+          {
+            "name": "Pexels",
+            "description": "Plataforma gratuita de fotos e vídeos de alta qualidade que permite aos usuários baixar, usar e compartilhar conteúdo para qualquer finalidade",
+            "link": "https://www.pexels.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Recursos", "Imagens", "Vídeos"]
+          },
+          {
+            "name": "Envato Elements",
+            "description": "Plataforma de assinatura que oferece milhões de recursos criativos, como templates, fotos, gráficos e vídeos, para uso pessoal e comercial",
+            "link": "https://elements.envato.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Recursos", "Criatividade", "Modelos"]
+          },
+          {
+            "name": "Hostinger",
+            "description": "Provedor de hospedagem web com planos compartilhados, VPS e WordPress",
+            "link": "https://www.hostinger.com",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Hosting"]
+          },
+          {
+            "name": "InfinityFree",
+            "description": "Serviço de hospedagem gratuita para projetos web",
+            "link": "https://www.infinityfree.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Hosting"]
+          }
+        ]
+      },
+      {
+        "group": "Frontend",
+        "items": [
+          {
+            "name": "MDN Blog",
+            "description": "Blog oficial do MDN Web Docs que publica notícias, tutoriais e perspectivas sobre o desenvolvimento web, complementando a documentação técnica existente.",
+            "link": "https://developer.mozilla.org/en-US/blog/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Blog", "Documentação"]
+          },
+          {
+            "name": "GSAP",
+            "description": "Biblioteca JavaScript de animação de alto desempenho que permite criar animações complexas na web com facilidade",
+            "link": "https://gsap.com/docs/v3/Installation/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["Animation", "Frontend"]
+          },
+          {
+            "name": "Aceternity UI",
+            "description": "Biblioteca de componentes e ferramentas para criar interfaces de usuário consistentes e modernas com facilidade",
+            "link": "https://ui.aceternity.com/",
+            "external": true,
+            "under_construction": false,
+            "categories": ["UI", "Frontend"]
+          }
+        ]
+      }
+    ]
+  }
+}
