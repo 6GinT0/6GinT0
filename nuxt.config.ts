@@ -55,19 +55,37 @@ export default defineNuxtConfig({
   i18n: {
     locales: [
       {
-        code: "ar",
-        language: "es-AR"
+        code: "es",
+        name: "🇪🇦",
+        iso: "es-AR",
+        language: "es-AR",
+        file: "es.json"
       },
       {
         code: "en",
-        language: "en-US"
+        name: "🇺🇸",
+        iso: "en-US",
+        language: "en-US",
+        file: "en.json"
       },
       {
         code: "br",
-        language: "pt-BR"
+        name: "🇧🇷",
+        iso: "pt-BR",
+        language: "pt-BR",
+        file: "br.json"
       }
     ],
-    defaultLocale: "ar"
+    defaultLocale: "en",
+    langDir: "locales/",
+    strategy: "prefix_except_default",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+      fallbackLocale: "en"
+    },
+    baseUrl: "http://localhost:3000"
   },
   app: {
     head: {
