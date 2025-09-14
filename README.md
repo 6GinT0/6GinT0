@@ -1,75 +1,73 @@
-# Nuxt Minimal Starter
+# Ulises Saucedo
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+**My Portfolio** is a personal portfolio project built with **Nuxt 4**.
+It includes **multilingual support**, a **modern UI**, and **email integration** for contact forms.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- Showcase of projects
+- Multilingual support with Nuxt i18n
+- Modern UI components with Shadcn Vue
+- Contact form with email sending via Resend
+- Fast and SEO-friendly thanks to Nuxt Content
+
+## Technologies Used
+
+- [Nuxt 3](https://nuxt.com/) - Main framework
+- [Nuxt Content](https://content.nuxt.com/) - Content management
+- [Nuxt i18n](https://i18n.nuxtjs.org/) - Internationalization
+- [Shadcn Vue](https://shadcn-vue.com/) - UI components
+- [Resend](https://resend.com/) - Email sending service
+
+## Installation & Usage
+
+Clone the repository:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+git clone https://github.com/6GinT0/Portafolio.git
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Navigate to the project directory:
 
 ```bash
-# npm
+cd MyPortfolio
+```
+
+Install dependencies:
+
+```bash
+ npm install
+```
+
+Configure environment variables in `.env`:
+
+```env
+NUXT_PUBLIC_BASE_URL=
+RESEND_API_KEY=
+```
+
+Start the development server:
+
+```bash
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Open in your browser:
+http://localhost:3000/
 
-Build the application for production:
+## Contribution
 
-```bash
-# npm
-npm run build
+If you want to contribute to **My Portfolio**, please:
 
-# pnpm
-pnpm build
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/new-feature`)
+3. Make your changes and commit (`git commit -m 'Add new feature'`)
+4. Submit a pull request
 
-# yarn
-yarn build
+## License
 
-# bun
-bun run build
-```
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute it.
 
-Locally preview production build:
+---
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Developed with ❤ by Ulises
