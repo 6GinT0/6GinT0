@@ -2,6 +2,7 @@
 import { useForm } from "vee-validate";
 import { toTypedSchema } from "@vee-validate/zod";
 import { emailSchema } from "~/schemas/email";
+import { toast } from "vue-sonner";
 
 const { t } = useI18n();
 
@@ -19,6 +20,8 @@ async function sendEmail(values: EmailBody) {
     method: "POST",
     body: values
   });
+
+  toast.success(t("pages.index.contact.submit.success"));
 }
 </script>
 
