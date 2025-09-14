@@ -1,0 +1,91 @@
+{
+  "pages": {
+    "index": {
+      "title": "Bem-vindo ao meu portfólio",
+      "description": "Você poderá ver todos os meus projetos e ferramentas que utilizo para trabalhar diariamente",
+      "hero": {
+        "first_line": "Olá, eu sou Ulisses",
+        "second_line": "Desenvolvedor web focado em experiências interativas e soluções personalizadas"
+      },
+      "about": {
+        "title": "Sobre mim",
+        "paragraph_1": "Meus primórdios na programação datam de 2021, em meio à pandemia e durante meus anos de escola. Foi na programação que dei meus primeiros passos, começando com Gobstones, uma linguagem simples composta de instruções como mover, remover, colocar e repetir. Embora esses primeiros passos parecessem irreais, eles foram o ponto de partida.",
+        "paragraph_2": "Foi só no ano seguinte que descobri a programação web. De repente, eu era como um peixe em um oceano imenso: constantemente aprendendo, pesquisando, fazendo perguntas e resolvendo problemas. Foi nessa época que descobri o que se tornaria meu primeiro conjunto de tecnologias: MEVN. Esse conjunto de tecnologias se tornou minha base para o desenvolvimento de projetos escolares e me deu as ferramentas para começar a criar soluções mais complexas.",
+        "paragraph_3": "No meu último ano de faculdade, concluí vários projetos usando MEVN, mas também experimentei PHP, expandindo meus conhecimentos e explorando diferentes abordagens de desenvolvimento web. No entanto, sentia que faltava algo. Comecei a me perguntar quais outras ferramentas poderiam me oferecer mais vantagens ao iniciar um projeto. Foi então que descobri o WordPress, uma plataforma que não só me permitiu criar soluções sem código, mas também oferecia um grande potencial de SEO.",
+        "paragraph_4": "Com essa tecnologia, finalmente decidi entrar no mundo freelancer. Os projetos começaram a chegar e, com eles, a oportunidade de aprimorar minhas habilidades. Esses projetos não só me permitiram fortalecer meus conhecimentos, como também me levaram a desenvolver interfaces mais interativas e focadas no usuário.",
+        "paragraph_5": "Em cada experiência, vejo uma oportunidade de expandir os limites do que o desenvolvimento web pode alcançar, sempre mantendo o foco na experiência do usuário.",
+        "paragraph_6": "No meu tempo livre, gosto de criar interfaces por diversão, testar novas tecnologias e continuar aprimorando minhas habilidades. Porque, no fim das contas, cada linha de código é uma oportunidade de expressar criatividade e resolver problemas de maneiras impactantes."
+      },
+      "interests": {
+        "title": "Interesses e Habilidades",
+        "paragraph": "Sou motivado pelo desafio de adaptar minhas habilidades, processos e forma de pensar para responder às necessidades em constante mudança do ambiente digital. Meus interesses e pontos fortes abrangem áreas como:",
+        "items": [
+          "Desenvolvimento Web",
+          "Design Web",
+          "WordPress",
+          "SEO Básico",
+          "Integração de APIs",
+          "Automatização de Fluxos",
+          "Exploração de Novas Tecnologias"
+        ]
+      },
+      "contact": {
+        "title": "Você tem um projeto em mente?",
+        "name": {
+          "label": "Nome",
+          "placeholder": "Nome"
+        },
+        "email": {
+          "label": "Email"
+        },
+        "subject": {
+          "label": "Assunto",
+          "placeholder": "Assunto"
+        },
+        "message": {
+          "label": "Mensagem",
+          "placeholder": "Mensagem"
+        },
+        "submit": {
+          "text": "Enviar",
+          "success": "Mensagem enviada com sucesso"
+        }
+      }
+    },
+    "tools": {
+      "title": "Ferramentas",
+      "description": "Uma seleção de ferramentas que eu uso ou recomendo, incluindo algumas que criei",
+      "card-button-external": "Visitar página",
+      "card-button-internal": "Visitar ferramenta"
+    },
+    "projects": {
+      "title": "Projetos",
+      "description": "Explore meus projetos de desenvolvimento web e aplicativos, unindo criatividade e tecnologia para criar soluções reais e úteis. Conheça ferramentas, apps e plataformas feitas para gerar valor",
+      "card-button": "Ler projeto",
+      "error-data": "Ainda não há projetos disponíveis",
+      "under_construction": "Em construção",
+      "repository": "Repositorio",
+      "demo": "Demo"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Aprenda a criar componentes reutilizáveis em Vue/Nuxt para código limpo, eficiente e escalável em seus projetos frontend",
+      "card-button": "Ler artigo",
+      "error-data": "Ainda não há artigos disponíveis"
+    },
+    "404": {
+      "message": "Página não encontrada",
+      "back": "Inicio"
+    }
+  },
+  "menu": {
+    "home": "Início",
+    "tools": "Ferramentas",
+    "projects": "Projetos",
+    "blog": "Blog"
+  },
+  "menu-actions": {
+    "download": "Baixar currículo",
+    "talk": "Vamos falar"
+  }
+}

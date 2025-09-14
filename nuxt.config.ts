@@ -85,7 +85,13 @@ export default defineNuxtConfig({
       redirectOn: "root",
       fallbackLocale: "en"
     },
-    baseUrl: "http://localhost:3000"
+    baseUrl: process.env.NUXT_PULIC_BASE_URL || "http://localhost:3000"
+  },
+  runtimeConfig: {
+    resendApiKey: process.env.RESEND_API_KEY,
+    public: {
+      baseUrl: process.env.NUXT_PULIC_BASE_URL || "http://localhost:3000"
+    }
   },
   app: {
     head: {
@@ -96,6 +102,17 @@ export default defineNuxtConfig({
           href: "/favicon.png"
         }
       ]
+    }
+  },
+  routeRules: {
+    "/**": {
+      ssr: false
+    },
+    "/blog/**": {
+      ssr: true
+    },
+    "/projects/**": {
+      ssr: true
     }
   }
 });
