@@ -14,14 +14,7 @@ const localePath = useLocalePath();
   <Card class="shadow-none">
     <CardHeader>
       <CardTitle>{{ post.title }}</CardTitle>
-      <div class="flex flex-wrap gap-1 mt-2">
-        <span
-          v-for="category in post.categories"
-          class="text-xs bg-primary dark:bg-[var(--terciary)]/25 px-2 py-1 rounded-full"
-        >
-          {{ category }}
-        </span>
-      </div>
+      <SharedCategories :categories="post.categories" />
     </CardHeader>
     <CardContent>
       <p class="text-sm">{{ post.description }}</p>
