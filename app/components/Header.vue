@@ -48,13 +48,16 @@ watch(currentLocale, (locale) => {
               class="transition-transform duration-300 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             />
           </Button>
-          <Button class="btn-header-actions group">
+          <NuxtLink
+            :to="localePath({ path: '/', hash: '#contact' })"
+            class="btn-header-actions group"
+          >
             {{ t("menu-actions.talk") }}
             <Icon
               name="tabler:arrow-up-right"
               class="transition-transform duration-300 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             />
-          </Button>
+          </NuxtLink>
           <Button class="btn-header-actions" @click="toggleDark()">
             <Icon :name="isDark ? 'tabler:sun' : 'tabler:moon'" />
           </Button>
@@ -134,13 +137,16 @@ watch(currentLocale, (locale) => {
                     class="transition-transform duration-300 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                   />
                 </Button>
-                <Button class="btn-header-actions group">
+                <NuxtLink
+                  :to="localePath({ path: '/', hash: '#contact' })"
+                  class="btn-header-actions group"
+                >
                   {{ t("menu-actions.talk") }}
                   <Icon
                     name="tabler:arrow-up-right"
                     class="transition-transform duration-300 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                   />
-                </Button>
+                </NuxtLink>
                 <Button class="btn-header-actions" @click="toggleDark()">
                   <Icon :name="isDark ? 'tabler:sun' : 'tabler:moon'" />
                 </Button>
