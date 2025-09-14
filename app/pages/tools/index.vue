@@ -3,6 +3,7 @@ import toolsData from "~/data/tools.json";
 
 const { t, locale } = useI18n();
 const toolsRef: Ref<any> = ref([]);
+const runtimeConfig = useRuntimeConfig();
 
 watch(
   locale,
@@ -14,18 +15,15 @@ watch(
   }
 );
 
-definePageMeta({
-  title: "pages.tools.title"
-});
-
 useSeoMeta({
+  title: t("pages.tools.title"),
   description: t("pages.tools.description"),
   ogTitle: t("pages.tools.title"),
   ogDescription: t("pages.tools.description"),
-  ogImage: "/images/me.png",
+  ogImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterTitle: t("pages.tools.title"),
   twitterDescription: t("pages.tools.description"),
-  twitterImage: "/images/me.png",
+  twitterImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterCard: "summary"
 });
 </script>
@@ -36,7 +34,30 @@ useSeoMeta({
       <div v-for="(tool, idx) in toolsRef" :key="idx" class="space-y-4">
         <h2 class="font-black lg:text-2xl underline">{{ tool.group }}</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
-          <ToolsCard v-for="(item, idx) in tool.items" :key="idx" :tool="item" />
+          <SharedCard
+            v-for="(item, idx) in tool.items"
+            :key="idx"
+            :item="item"
+            :categories="item.categories"
+          >
+            <template #icon> ⛏️ </template>
+            <template #title> {{ item.name }} </template>
+            <template #description> {{ item.description }} </template>
+            <template #footer>
+              <template v-if="item.external">
+                <a :href="item.link" target="_blank" rel="noopener noreferrer">
+                  <Button class="page-actions">
+                    {{ t("pages.tools.card-button-external") }}
+                  </Button>
+                </a>
+              </template>
+              <template v-else>
+                <NuxtLink :to="item.link">
+                  {{ t("pages.tools.card-button-internal") }}
+                </NuxtLink>
+              </template>
+            </template>
+          </SharedCard>
         </div>
       </div>
     </div>

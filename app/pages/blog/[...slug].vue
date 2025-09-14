@@ -4,6 +4,7 @@ import type { Collections } from "@nuxt/content";
 const route = useRoute();
 const { locale } = useI18n();
 const slug = computed(() => String(route.params.slug));
+const runtimeConfig = useRuntimeConfig();
 
 const { data: page, error } = await useAsyncData(
   "post",
@@ -37,10 +38,10 @@ useSeoMeta({
   description: page.value?.description,
   ogTitle: page.value?.title,
   ogDescription: page.value?.description,
-  ogImage: "/images/me.png",
+  ogImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterTitle: page.value?.title,
   twitterDescription: page.value?.description,
-  twitterImage: "/images/me.png",
+  twitterImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterCard: "summary"
 });
 </script>

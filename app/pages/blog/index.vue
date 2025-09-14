@@ -3,6 +3,7 @@ import type { Collections } from "@nuxt/content";
 
 const { t, locale } = useI18n();
 const localePath = useLocalePath();
+const runtimeConfig = useRuntimeConfig();
 
 const { data: posts } = await useAsyncData(
   "blog",
@@ -28,21 +29,25 @@ useSeoMeta({
   description: t("pages.blog.description"),
   ogTitle: t("pages.blog.title"),
   ogDescription: t("pages.blog.description"),
-  ogImage: "/images/me.png",
+  ogImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterTitle: t("pages.blog.title"),
   twitterDescription: t("pages.blog.description"),
-  twitterImage: "/images/me.png",
+  twitterImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterCard: "summary"
 });
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-6">
-    <div class="my-8 space-y-12" v-if="posts">
+  <SharedCautionTape v-if="!posts || posts.length === 0" :message="t('pages.blog.error-data')" />
+  <div v-else class="container mx-auto px-4 py-6">
+    <div class="my-8 space-y-12">
       <div class="space-y-4">
         <NuxtImg
           :src="firstPost.cover.src"
+          :alt="firstPost.cover.alt"
           class="w-full rounded-lg border max-h-[500px] object-cover"
+          quality="50"
+          format="webp"
         />
         <NuxtLink
           class="font-black lg:text-2xl underline"

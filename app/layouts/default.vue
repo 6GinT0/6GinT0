@@ -1,8 +1,5 @@
 <script setup lang="ts">
-const route = useRoute();
-const { t } = useI18n();
 const head = useLocaleHead();
-const title = computed(() => t(route.meta.title));
 
 useHead({
   titleTemplate: "%s | Ulises Saucedo"
@@ -10,9 +7,8 @@ useHead({
 </script>
 
 <template>
-  <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
+  <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir" class="scroll-smooth">
     <Head>
-      <Title>{{ title }}</Title>
       <template v-for="link in head.link" :key="link.key">
         <Link :id="link.key" :rel="link.rel" :href="link.href" :hreflang="link.hreflang" />
       </template>

@@ -4,6 +4,7 @@ import Meteors from "~/components/ui/Meteors.vue";
 import { motion } from "motion-v";
 
 const { t } = useI18n();
+const runtimeConfig = useRuntimeConfig();
 
 definePageMeta({
   title: "pages.index.title"
@@ -14,10 +15,10 @@ useSeoMeta({
   description: t("pages.index.description"),
   ogTitle: t("pages.index.title"),
   ogDescription: t("pages.index.description"),
-  ogImage: "/images/me.png",
+  ogImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterTitle: t("pages.index.title"),
   twitterDescription: t("pages.index.description"),
-  twitterImage: "/images/me.png",
+  twitterImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterCard: "summary"
 });
 </script>
