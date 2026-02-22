@@ -4,10 +4,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+  ignore: ["pages/**/components/**", "pages/_components/**"],
   vite: {
     plugins: [tailwindcss()]
   },
   modules: [
+    "@nuxt/ui",
     "@nuxt/eslint",
     "@nuxt/image",
     "@nuxt/fonts",
@@ -15,19 +17,12 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/content",
     "@vueuse/nuxt",
-    "@pinia/nuxt",
-    "pinia-plugin-persistedstate",
-    "shadcn-nuxt",
     "motion-v/nuxt"
   ],
   css: ["~/assets/css/tailwind.css"],
   icon: {
     mode: "css",
     cssLayer: "base"
-  },
-  shadcn: {
-    prefix: "",
-    componentDir: "./app/components/ui"
   },
   image: {
     quality: 80,
@@ -36,21 +31,10 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       {
-        name: "IBM Plex Mono",
-        provider: "google"
-      },
-      {
-        name: "Poppins",
-        provider: "google"
-      },
-      {
-        name: "Fredoka",
+        name: "Instrument Serif",
         provider: "google"
       }
     ]
-  },
-  pinia: {
-    storesDirs: ["./app/stores/**"]
   },
   i18n: {
     locales: [
@@ -67,13 +51,6 @@ export default defineNuxtConfig({
         iso: "en-US",
         language: "en-US",
         file: "en.json"
-      },
-      {
-        code: "br",
-        name: "🇧🇷",
-        iso: "pt-BR",
-        language: "pt-BR",
-        file: "br.json"
       }
     ],
     defaultLocale: "en",
@@ -85,12 +62,12 @@ export default defineNuxtConfig({
       redirectOn: "root",
       fallbackLocale: "en"
     },
-    baseUrl: process.env.NUXT_PULIC_BASE_URL || "http://localhost:3000"
+    baseUrl: process.env.NUXT_PUBLIC_BASE_URL || "http://localhost:3000"
   },
   runtimeConfig: {
     resendApiKey: process.env.RESEND_API_KEY,
     public: {
-      baseUrl: process.env.NUXT_PULIC_BASE_URL || "http://localhost:3000"
+      baseUrl: process.env.NUXT_PUBLIC_BASE_URL || "http://localhost:3000"
     }
   },
   app: {
@@ -107,12 +84,6 @@ export default defineNuxtConfig({
   routeRules: {
     "/**": {
       ssr: false
-    },
-    "/blog/**": {
-      ssr: true
-    },
-    "/projects/**": {
-      ssr: true
     }
   }
 });

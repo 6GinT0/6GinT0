@@ -4,7 +4,7 @@ const blogSchema = z.object({
   title: z.string().min(5, "El título es obligatorio y debe tener al menos 5 caracteres"),
   description: z.string().min(20, "La descripción debe ser más descriptiva"),
   slug: z.string(),
-  date: z.string().datetime().optional(),
+  date: z.string().optional(),
   cover: z
     .object({
       src: z.string().url(),
@@ -12,7 +12,7 @@ const blogSchema = z.object({
     })
     .optional(),
   categories: z.array(z.string()).default([]),
-  language: z.enum(["en", "es", "br"]),
+  language: z.enum(["en", "es"]),
   published: z.boolean().default(true),
   readingTime: z.number().optional()
 });
@@ -28,7 +28,7 @@ const projectSchema = z.object({
   repository: z.string().url().optional(),
   demo: z.string().url().optional(),
   images: z.array(z.string().url()).optional(),
-  date: z.string().datetime().optional(),
+  date: z.string().optional(),
   highlight: z.boolean().default(false)
 });
 
@@ -44,25 +44,23 @@ export default defineContentConfig({
       source: "es/blog/**.md",
       schema: blogSchema
     }),
-    blog_br: defineCollection({
-      type: "page",
-      source: "br/blog/**.md",
-      schema: blogSchema
-    }),
     projects_en: defineCollection({
-      type: "data",
-      source: "en/projects/**.json",
+      type: "page",
+      source: "en/projects/**.md",
       schema: projectSchema
     }),
     projects_es: defineCollection({
-      type: "data",
-      source: "es/projects/**.json",
+      type: "page",
+      source: "es/projects/**.md",
       schema: projectSchema
     }),
-    projects_br: defineCollection({
-      type: "data",
-      source: "br/projects/**.json",
-      schema: projectSchema
+    en: defineCollection({
+      type: "page",
+      source: "en/*.md"
+    }),
+    es: defineCollection({
+      type: "page",
+      source: "es/*.md"
     })
   }
 });
