@@ -1,91 +1,64 @@
 {
-  "pages": {
-    "index": {
-      "title": "Welcome to my portfolio",
-      "description": "You will be able to see all my projects and tools that I use to work on a daily basis",
-      "hero": {
-        "first_line": "Hi, im Ulises",
-        "second_line": "Web developer focused on interactive experiences and custom solutions"
-      },
-      "about": {
-        "title": "About me",
-        "paragraph_1": "My beginnings in programming date back to 2021, in the midst of the pandemic and during my school years. It was in programming that I took my first steps, starting with Gobstones, a simple language composed of instructions like move, remove, put, and repeat. Although those first steps felt unreal, they were the starting point.",
-        "paragraph_2": "It wasn't until the following year that I discovered web programming. Suddenly, I was like a fish in an immense ocean: constantly learning, searching, asking questions, and solving problems. It was during this time that I discovered what would become my first technology stack: MEVN. This set of technologies became my foundation for developing school projects and gave me the tools to begin creating more complex solutions.",
-        "paragraph_3": "In my final year of school, I completed several projects using MEVN, but I also experimented with PHP, expanding my knowledge and exploring different approaches to web development. However, I felt like something was missing. I began to wonder what other tools might offer me more advantages when starting a project. That's when I discovered WordPress, a platform that not only allowed me to create code-free solutions but also offered great SEO potential.",
-        "paragraph_4": "With this technology, I finally decided to jump into the freelance world. Projects started coming in, and with them, the opportunity to hone my skills. These projects not only allowed me to strengthen my knowledge but also led me to develop more interactive and user-focused interfaces.",
-        "paragraph_5": "In every experience, I see an opportunity to push the boundaries of what web development can achieve, while always keeping the focus on the user experience.",
-        "paragraph_6": "In my free time, I like to design interfaces for fun, test new technologies, and continue honing my skills. Because, at the end of the day, every line of code is an opportunity to express creativity and solve problems in impactful ways."
-      },
-      "interests": {
-        "title": "Interests and Skills",
-        "paragraph": "I am motivated by the challenge of adapting my skills, processes, and way of thinking to respond to the changing needs of the digital environment. My interests and strengths cover areas such as:",
-        "items": [
-          "Web Development",
-          "Web Design",
-          "WordPress",
-          "Basic SEO",
-          "API Integration",
-          "Workflow Automation",
-          "Exploring New Technologies"
-        ]
-      },
-      "contact": {
-        "title": "Do you have a project in mind?",
-        "name": {
-          "label": "Name",
-          "placeholder": "Name"
-        },
-        "email": {
-          "label": "Email"
-        },
-        "subject": {
-          "label": "Subject",
-          "placeholder": "Subject"
-        },
-        "message": {
-          "label": "Message",
-          "placeholder": "Message"
-        },
-        "submit": {
-          "text": "Send",
-          "success": "Message sent successfully!"
-        }
-      }
-    },
-    "tools": {
-      "title": "Tools",
-      "description": "A curated selection of tools I use or recommend, including my own creations",
-      "card-button-external": "Visit page",
-      "card-button-internal": "Visitar tool"
-    },
-    "projects": {
-      "title": "Projects",
-      "description": "Discover my web development and app projects, where creativity meets technology to deliver real and useful solutions. Explore tools, apps, and platforms designed to create value",
-      "card-button": "See more",
-      "error-data": "There are no projects available yet",
-      "under_construction": "Under construction",
-      "repository": "Repository",
-      "demo": "Demo"
-    },
-    "blog": {
-      "title": "Blog",
-      "description": "Learn how to build reusable components in Vue/Nuxt for clean, efficient, and scalable frontend code",
-      "card-button": "Read more",
-      "error-data": "There are no items available yet."
-    },
-    "404": {
-      "message": "Page not found",
-      "back": "Home"
-    }
-  },
   "menu": {
     "home": "Home",
     "tools": "Tools",
     "projects": "Projects",
     "blog": "Blog"
   },
-  "menu-actions": {
-    "download": "Download resume",
-    "talk": "Let's talk"
+  "index": {
+    "job": "Full Stack Developer"
+  },
+  "blog": {
+    "anchor_text": "Read article",
+    "go_back": "Go back",
+    "empty_error": "No articles available yet"
+  },
+  "projects": {
+    "anchor_text": "View project",
+    "go_back": "Go back",
+    "empty_error": "No projects available yet",
+    "not_found": "Project not found"
+  },
+  "contact_form": {
+    "title": "Contact",
+    "name": {
+      "label": "Name",
+      "placeholder": "Name",
+      "validation_required": "Field required",
+      "validation_min": "The name must have at least 3 characters"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email",
+      "validation_required": "Field required",
+      "validation_email": "Invalid email"
+    },
+    "subject": {
+      "label": "Subject",
+      "placeholder": "Subject",
+      "validation_required": "Field required",
+      "validation_min": "The subject must have at least 3 characters"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Message",
+      "validation_required": "Field required",
+      "validation_min": "The message must have at least 3 characters"
+    },
+    "submit": {
+      "text": "Send",
+      "success": {
+        "message": "Message sent successfully.",
+        "title": "Success"
+      },
+      "error": {
+        "message": "An error occurred while sending the message. Please try again later.",
+        "title": "An error occurred"
+      }
+    }
+  },
+  "404": {
+    "message": "Page not found",
+    "back": "Back to home"
   }
 }

@@ -1,71 +1,48 @@
 <script setup lang="ts">
-import Meteors from "~/components/ui/Meteors.vue";
+import type { Collections } from "@nuxt/content";
 
-import { motion } from "motion-v";
-
-const { t } = useI18n();
+const { locale, t } = useI18n();
 const runtimeConfig = useRuntimeConfig();
+const route = useRoute();
 
-definePageMeta({
-  title: "pages.index.title"
+const { data: pageContent } = await useAsyncData(`content-${route.path}-${locale.value}`, () => {
+  const collectionName = locale.value === "es" ? "es" : "en";
+
+  const path = locale.value === "es" ? route.path : "/en" + route.path;
+
+  return queryCollection(collectionName as keyof Collections)
+    .path(path)
+    .first();
 });
 
 useSeoMeta({
-  title: t("pages.index.title"),
-  description: t("pages.index.description"),
-  ogTitle: t("pages.index.title"),
-  ogDescription: t("pages.index.description"),
+  title: pageContent.value?.title,
+  description: pageContent.value?.description,
+  ogTitle: pageContent.value?.title,
+  ogDescription: pageContent.value?.description,
   ogImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
-  twitterTitle: t("pages.index.title"),
-  twitterDescription: t("pages.index.description"),
+  twitterTitle: pageContent.value?.title,
+  twitterDescription: pageContent.value?.description,
   twitterImage: `${runtimeConfig.public.baseUrl}/images/me.png`,
   twitterCard: "summary"
 });
 </script>
 
 <template>
-  <section class="h-[calc(100dvh-125px)] flex items-center container mx-auto px-4">
-    <div class="hidden md:block">
-      <Meteors :number="20" />
+  <div>
+    <section>
+      <h1 class="text-7xl leading-24 font-instrument-serif">Ulises</h1>
+      <div class="flex items-center justify-between">
+        <p>{{ t("index.job") }}</p>
+
+        <span>📍 Argentina</span>
+      </div>
+    </section>
+    <div class="my-12">
+      <ContentRenderer v-if="pageContent" :value="pageContent" :prose="false" />
     </div>
-
-    <div>
-      <motion.div
-        :initial="{ opacity: 0 }"
-        :animate="{
-          opacity: 1
-        }"
-      >
-        <NuxtImg src="/images/me.png" alt="Me" class="w-[100px] mb-5" quality="50" format="webp" />
-      </motion.div>
-      <motion.h2
-        :initial="{ opacity: 0, y: 100 }"
-        :animate="{
-          opacity: 1,
-          y: 0,
-          transition: { delay: 0.5, duration: 1.3, ease: 'easeInOut' }
-        }"
-        class="font-fredoka leading-none text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-[#888]"
-      >
-        {{ t("pages.index.hero.first_line") }}
-      </motion.h2>
-      <motion.h2
-        :initial="{ opacity: 0, y: 100 }"
-        :animate="{
-          opacity: 1,
-          y: 0,
-          transition: { delay: 0.9, duration: 1.9, ease: 'easeInOut' }
-        }"
-        class="font-fredoka leading-none text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black"
-      >
-        {{ t("pages.index.hero.second_line") }}
-      </motion.h2>
-    </div>
-  </section>
-
-  <HomeAbout />
-
-  <HomeSkills />
-
-  <HomeContactForm />
+    <UiWrapperSection :title="$t('contact_form.title')">
+      <ContactForm />
+    </UiWrapperSection>
+  </div>
 </template>

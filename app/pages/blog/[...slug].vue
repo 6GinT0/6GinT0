@@ -6,32 +6,21 @@ const { locale } = useI18n();
 const slug = computed(() => String(route.params.slug));
 const runtimeConfig = useRuntimeConfig();
 
-const { data: page, error } = await useAsyncData(
+const { data: page } = await useAsyncData(
   "post",
   async () => {
     const collection = `blog_${locale.value}` as keyof Collections;
-    const content = await queryCollection(collection).where("slug", "=", slug.value).first();
 
-    if (!content) {
-      throw new Error();
-    }
-
-    return content;
+    return await queryCollection(collection).where("slug", "=", slug.value).first();
   },
   {
     watch: [locale, slug]
   }
 );
 
-if (error.value) {
+if (!page.value) {
   throw createError({ fatal: true, statusCode: 404 });
 }
-
-watch(error, () => {
-  if (error.value) {
-    throw createError({ fatal: true, statusCode: 404 });
-  }
-});
 
 useSeoMeta({
   title: page.value?.title,
@@ -47,27 +36,15 @@ useSeoMeta({
 </script>
 
 <template>
-  <div v-if="page" class="container mx-auto px-4 py-6 max-w-3xl">
-    <div class="relative">
-      <NuxtImg
-        :src="page?.cover?.src"
-        :alt="page?.cover?.alt"
-        class="w-full rounded-lg border max-h-[500px] object-cover"
-        quality="50"
-        format="webp"
-      />
+  <div class="my-12 max-w-3xl prose dark:prose-invert">
+    <template v-if="page">
+      <ContentRenderer v-if="page" :value="page" :prose="false" />
 
-      <div class="absolute inset-0 bg-black/70 rounded-lg" />
-
-      <h1
-        class="font-black lg:text-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white drop-shadow-lg"
-      >
-        {{ page.title }}
-      </h1>
-    </div>
-    <SharedCategories :categories="page.categories as string[]" />
-    <div class="prose lg:prose-lg dark:prose-invert mb-6 mx-auto">
-      <ContentRenderer v-if="page" :value="page" />
-    </div>
+      <div class="mt-8 w-full flex justify-end">
+        <UButton class="cursor-pointer" variant="soft" @click="$router.back()">
+          {{ $t("blog.go_back") }}
+        </UButton>
+      </div>
+    </template>
   </div>
 </template>

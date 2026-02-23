@@ -1,91 +1,64 @@
 {
-  "pages": {
-    "index": {
-      "title": "Bienvenido a mi portafolio",
-      "description": "Podrás ver todos mis proyectos y herramientas que uso para trabajar en mi día a día",
-      "hero": {
-        "first_line": "Hola, soy Ulises",
-        "second_line": "Desarrollador web con enfoque en experiencias interactivas y soluciones personalizadas"
-      },
-      "about": {
-        "title": "Sobre mí",
-        "paragraph_1": "Mis comienzos en la programación se remontan a 2021, en plena pandemia y durante mi etapa escolar. Fue en la materia de programación donde di mis primeros pasos, iniciando con Gobstones, un lenguaje sencillo compuesto por instrucciones como mover, sacar, poner y repetir. Aunque esos primeros pasos se sintieron poco reales, fueron el punto de partida.",
-        "paragraph_2": "No fue hasta el año siguiente que descubrí la programación web. De repente, era como un pez en un océano inmenso: aprendiendo, buscando, preguntando y solucionando problemas continuamente. Fue en este tiempo cuando encontré lo que sería mi primer stack tecnológico: MEVN. Este conjunto de tecnologías se convirtió en mi base para desarrollar proyectos escolares y me brindó las herramientas para comenzar a crear soluciones más complejas.",
-        "paragraph_3": "En el último año de la escuela, realicé varios proyectos usando MEVN, pero también experimenté con PHP, ampliando mis conocimientos y explorando diferentes enfoques para el desarrollo web. Sin embargo, sentía que algo faltaba. Comenzó a rondarme la idea de qué otras herramientas podrían brindarme más ventajas al iniciar un proyecto. Fue entonces cuando conocí WordPress, una plataforma que no solo permitía crear soluciones sin código, sino que además ofrecía grandes posibilidades en términos de SEO.",
-        "paragraph_4": "Con esta tecnología, finalmente decidí lanzarme al mundo freelance. Los proyectos comenzaron a llegar, y con ellos, la oportunidad de perfeccionar mis habilidades. Estos proyectos no solo me permitieron afianzar mis conocimientos, sino que también me llevaron a desarrollar interfaces más interactivas y enfocadas en el usuario.",
-        "paragraph_5": "En cada experiencia, veo la oportunidad de empujar los límites de lo que el desarrollo web puede lograr, manteniendo siempre el foco en la experiencia del usuario.",
-        "paragraph_6": "En mi tiempo libre, me gusta diseñar interfaces por diversión, probar nuevas tecnologías y seguir afinando mis habilidades. Porque, al final del día, cada línea de código es una oportunidad para expresar creatividad y resolver problemas de forma impactante."
-      },
-      "interests": {
-        "title": "Intereses y habilidades",
-        "paragraph": "Me motiva el desafío de adaptar mis habilidades, procesos y forma de pensar para responder a las necesidades cambiantes del entorno digital. Mis intereses y fortalezas abarcan áreas como:",
-        "items": [
-          "Desarrollo Web",
-          "Diseño Web",
-          "WordPress",
-          "SEO Básico",
-          "Integración de APIs",
-          "Automatización de Flujos",
-          "Exploración de nuecas tecnologías"
-        ]
-      },
-      "contact": {
-        "title": "¿Tenes un proyecto en mente?",
-        "name": {
-          "label": "Nombre",
-          "placeholder": "Nombre"
-        },
-        "email": {
-          "label": "Email"
-        },
-        "subject": {
-          "label": "Asunto",
-          "placeholder": "Asunto"
-        },
-        "message": {
-          "label": "Mensaje",
-          "placeholder": "Mensaje"
-        },
-        "submit": {
-          "text": "Enviar",
-          "success": "Mensaje enviado correctamente"
-        }
-      }
-    },
-    "tools": {
-      "title": "Herramientas",
-      "description": "Una selección de herramientas que utilizo o recomiendo, incluidas algunas creadas por mí",
-      "card-button-external": "Visitar página",
-      "card-button-internal": "Visitar herramienta"
-    },
-    "projects": {
-      "title": "Proyectos",
-      "description": "Explora mis proyectos de desarrollo web y aplicaciones, donde combino creatividad y tecnología para crear soluciones reales y útiles. Conoce herramientas, apps y plataformas diseñadas para aportar valor",
-      "card-button": "Ver más",
-      "error-data": "Todavía no hay proyectos disponibles",
-      "under_construction": "En construcción",
-      "repository": "Repositorio",
-      "demo": "Demo"
-    },
-    "blog": {
-      "title": "Blog",
-      "description": "Aprende a crear componentes reutilizables en Vue/Nuxt para un código limpio, eficiente y escalable en tus proyectos frontend",
-      "card-button": "Leer artículo",
-      "error-data": "Todavía no hay artículos disponibles"
-    },
-    "404": {
-      "message": "Página no encontrada",
-      "back": "Inicio"
-    }
-  },
   "menu": {
     "home": "Inicio",
     "tools": "Herramientas",
     "projects": "Proyectos",
     "blog": "Blog"
   },
-  "menu-actions": {
-    "download": "Descargar CV",
-    "talk": "Hablemos"
+  "index": {
+    "job": "Full Stack Developer"
+  },
+  "blog": {
+    "anchor_text": "Leer artículo",
+    "go_back": "Volver atrás",
+    "empty_error": "Todavía no hay artículos disponibles"
+  },
+  "projects": {
+    "anchor_text": "Ver proyecto",
+    "go_back": "Volver atrás",
+    "empty_error": "Todavía no hay proyectos disponibles",
+    "not_found": "Proyecto no encontrado"
+  },
+  "contact_form": {
+    "title": "Contacto",
+    "name": {
+      "label": "Nombre",
+      "placeholder": "Nombre",
+      "validation_required": "Campo requerido",
+      "validation_min": "El nombre debe tener al menos 3 caracteres"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email",
+      "validation_required": "Campo requerido",
+      "validation_email": "Email inválido"
+    },
+    "subject": {
+      "label": "Asunto",
+      "placeholder": "Asunto",
+      "validation_required": "Campo requerido",
+      "validation_min": "El asunto debe tener al menos 3 caracteres"
+    },
+    "message": {
+      "label": "Mensaje",
+      "placeholder": "Mensaje",
+      "validation_required": "Campo requerido",
+      "validation_min": "El mensaje debe tener al menos 3 caracteres"
+    },
+    "submit": {
+      "text": "Enviar",
+      "success": {
+        "message": "Mensaje enviado correctamente.",
+        "title": "Éxito"
+      },
+      "error": {
+        "message": "Ocurrió un error al enviar el mensaje. Intente nuevamente más tarde.",
+        "title": "Ocurrió un error"
+      }
+    }
+  },
+  "404": {
+    "message": "Página no encontrada",
+    "back": "Volver al inicio"
   }
 }
