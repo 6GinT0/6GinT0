@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/content",
     "@vueuse/nuxt",
-    "motion-v/nuxt"
+    "@nuxtjs/supabase"
   ],
   css: ["~/assets/css/tailwind.css"],
   icon: {
@@ -69,6 +69,11 @@ export default defineNuxtConfig({
     public: {
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL || "http://localhost:3000"
     }
+  },
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY,
+    redirect: false
   },
   app: {
     head: {

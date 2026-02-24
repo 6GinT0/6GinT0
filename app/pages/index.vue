@@ -41,6 +41,9 @@ useSeoMeta({
     <div class="my-12">
       <ContentRenderer v-if="pageContent" :value="pageContent" :prose="false" />
     </div>
+    <UiWrapperSection :title="$t('index.canvas')">
+      <UiCanvas />
+    </UiWrapperSection>
     <UiWrapperSection :title="$t('contact_form.title')">
       <ContactForm />
     </UiWrapperSection>

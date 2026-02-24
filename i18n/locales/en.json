@@ -6,7 +6,8 @@
     "blog": "Blog"
   },
   "index": {
-    "job": "Full Stack Developer"
+    "job": "Full Stack Developer",
+    "canvas": "Sign wall"
   },
   "blog": {
     "anchor_text": "Read article",
