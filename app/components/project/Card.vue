@@ -25,7 +25,7 @@ const localePath = useLocalePath();
       <NuxtImg
         :src="
           image ||
-          'http://noigsrnwtqtwtrkqymrd.supabase.co/storage/v1/object/public/DX/projects/ascii-art-text.png'
+          'https://noigsrnwtqtwtrkqymrd.supabase.co/storage/v1/object/public/DX/projects/ascii-art-text.png'
         "
         :alt="title"
         class="h-full w-full object-cover rounded-lg"
