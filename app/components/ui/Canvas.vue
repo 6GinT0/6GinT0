@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Stroke, Point, Sign } from "#shared/types/canvas";
+
 const client = useSupabaseClient();
 const canvasRef = ref<HTMLCanvasElement | null>(null);
 const containerRef = ref<HTMLElement | null>(null);
@@ -24,16 +26,18 @@ const channel = client.channel("canvas_signs", {
   config: { broadcast: { self: false } }
 });
 
-const saveSignature = async (stroke: any) => {
+const saveSignature = async (stroke: Stroke) => {
   try {
-    const { error } = await client.from("canvas").insert({ sign: stroke });
+    const { error } = await client.from("canvas").insert({
+      sign: stroke as Sign
+    });
     if (error) throw error;
   } catch (err) {
     console.error("Error saving signature:", err);
   }
 };
 
-const emitStroke = (points: any[]) => {
+const emitStroke = (points: Point[]) => {
   channel.send({
     type: "broadcast",
     event: "stroke",
@@ -68,7 +72,8 @@ const handleEnd = () => {
 
   if (afterLen > beforeLen) {
     const newStroke = strokes.value[afterLen - 1];
-    saveSignature(newStroke);
+
+    saveSignature(newStroke as Stroke);
   }
 
   if (tool.value === "pencil") {
@@ -78,23 +83,27 @@ const handleEnd = () => {
 
 onMounted(async () => {
   const { data } = await client.from("canvas").select("sign");
-  if (data) strokes.value = data.map((d: any) => d.sign);
+  if (data) {
+    strokes.value = data.map((d) => d.sign as Stroke);
+  }
 
   channel
     .on("broadcast", { event: "stroke" }, ({ payload }) => {
-      remoteStrokes.value[payload.sessionId] = {
-        points: payload.points,
-        lightColor: payload.lightColor,
-        darkColor: payload.darkColor
+      remoteStrokes.value[payload.sessionId as string] = {
+        points: payload.points as Point[],
+        lightColor: payload.lightColor as string,
+        darkColor: payload.darkColor as string
       };
     })
     .on("broadcast", { event: "stroke-end" }, ({ payload }) => {
-      delete remoteStrokes.value[payload.sessionId];
+      const { [payload.sessionId as string]: _, ...rest } = remoteStrokes.value;
+      remoteStrokes.value = rest;
     })
     .on("postgres_changes", { event: "INSERT", schema: "public", table: "canvas" }, (payload) => {
-      const newSign = payload.new.sign;
+      const newSign = payload.new.sign as unknown as Stroke;
+
       const alreadyExists = strokes.value.some(
-        (s: any) => JSON.stringify(s.points) === JSON.stringify(newSign.points)
+        (s: Stroke) => JSON.stringify(s.points) === JSON.stringify(newSign.points)
       );
 
       if (!alreadyExists) {

@@ -1,15 +1,5 @@
 import { useEventListener, useDark } from "@vueuse/core";
-
-interface Point {
-  x: number;
-  y: number;
-}
-
-interface Stroke {
-  points: Point[];
-  lightColor: string;
-  darkColor: string;
-}
+import type { Stroke, Point } from "#shared/types/canvas";
 
 export const useCanvas = (
   canvasRef: Ref<HTMLCanvasElement | null>,
