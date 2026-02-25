@@ -1,9 +1,13 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   post: any;
 }>();
 
 const localePath = useLocalePath();
+
+const formattedDate = computed(() => {
+  return formatDate(props.post.date);
+});
 </script>
 
 <template>
@@ -21,9 +25,11 @@ const localePath = useLocalePath();
       <h2 class="font-semibold leading-tight m-0 text-sm sm:text-md">
         {{ post.title }}
       </h2>
-      <time class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400" :datetime="post.date">
-        {{ formatDate(post.date) }}
-      </time>
+      <span class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+        <ClientOnly>
+          {{ formattedDate }}
+        </ClientOnly>
+      </span>
     </div>
   </NuxtLink>
 </template>

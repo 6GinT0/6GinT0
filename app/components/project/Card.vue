@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   title: string;
   description: string;
   date: string;
@@ -9,6 +9,10 @@ defineProps<{
 }>();
 
 const localePath = useLocalePath();
+
+const formattedDate = computed(() => {
+  return formatDate(props.date);
+});
 </script>
 
 <template>
@@ -36,12 +40,13 @@ const localePath = useLocalePath();
         <h3 class="text-xl font-bold leading-tight m-0">
           {{ title }}
         </h3>
-        <time
+        <span
           class="shrink-0 text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 bg-zinc-100 dark:bg-zinc-700 px-2 py-1 rounded-md"
-          :datetime="date"
         >
-          {{ date }}
-        </time>
+          <ClientOnly>
+            {{ formattedDate }}
+          </ClientOnly>
+        </span>
       </div>
       <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed line-clamp-3">
         {{ description }}
