@@ -115,20 +115,20 @@ onMounted(async () => {
     >
       <div class="flex items-center gap-1 border-r border-zinc-200 dark:border-zinc-800 pr-1 mr-1">
         <UButton
-          icon="i-heroicons-pencil"
-          color="neutral"
-          variant="ghost"
-          size="sm"
-          :class="{ 'bg-zinc-100 dark:bg-zinc-800': tool === 'pencil' }"
-          @click="tool = 'pencil'"
-        />
-        <UButton
           icon="i-heroicons-hand-raised"
           color="neutral"
           variant="ghost"
           size="sm"
           :class="{ 'bg-zinc-100 dark:bg-zinc-800': tool === 'hand' }"
           @click="tool = 'hand'"
+        />
+        <UButton
+          icon="i-heroicons-pencil"
+          color="neutral"
+          variant="ghost"
+          size="sm"
+          :class="{ 'bg-zinc-100 dark:bg-zinc-800': tool === 'pencil' }"
+          @click="tool = 'pencil'"
         />
       </div>
 

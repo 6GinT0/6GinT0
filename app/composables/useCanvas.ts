@@ -25,7 +25,7 @@ export const useCanvas = (
 
   const scale = ref(1);
   const offset = ref({ x: 0, y: 0 });
-  const tool = ref<"pencil" | "hand">("pencil");
+  const tool = ref<"pencil" | "hand">("hand");
   const isInteracting = ref(false);
 
   const strokes = ref<Stroke[]>([]);
