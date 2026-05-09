@@ -3,6 +3,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
+   experimental: {
+    viewTransition: true
+  },
   devtools: { enabled: true },
   ignore: ["pages/**/components/**", "pages/_components/**"],
   vite: {
