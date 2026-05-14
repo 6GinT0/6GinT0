@@ -1,73 +1,75 @@
-# Ulises Saucedo
+<div>
+  <img style="100%" width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=tokyonight"  />
+</div>
 
-**My Portfolio** is a personal portfolio project built with **Nuxt 4**.
-It includes **multilingual support**, a **modern UI**, and **email integration** for contact forms.
+<div align="center">
+  <img height="700" src="https://media1.tenor.com/m/H-2-Fhx09eEAAAAC/sawamura-eijun-eijun.gif"  />
+</div>
 
-## Features
+<h1 align="left">Hi! 👋🏼 I'm Ulises</h1>
 
-- Showcase of projects
-- Multilingual support with Nuxt i18n
-- Modern UI components with Shadcn Vue
-- Contact form with email sending via Resend
-- Fast and SEO-friendly thanks to Nuxt Content
+<p align="left">Welcome to my page!<br>I'm Ulises, Fullstack developer from  Buenos Aires, Argentina.</p>
 
-## Technologies Used
+<h2 align="left">💻 Things i code with</h2>
 
-- [Nuxt 3](https://nuxt.com/) - Main framework
-- [Nuxt Content](https://content.nuxt.com/) - Content management
-- [Nuxt i18n](https://i18n.nuxtjs.org/) - Internationalization
-- [Shadcn Vue](https://shadcn-vue.com/) - UI components
-- [Resend](https://resend.com/) - Email sending service
+<div align="left">
+  <img src="https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white&style=for-the-badge" height="25" alt="arduino logo"  />
+  <img width="4" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" height="25" alt="html5 logo"  />
+  <img width="4" />
+  <img src="https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=white&style=for-the-badge" height="25" alt="css logo"  />
+  <img width="4" />
+  <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white&style=for-the-badge" height="25" alt="nodejs logo"  />
+  <img width="4" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" height="25" alt="javascript logo"  />
+  <img width="4" />
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" height="25" alt="python logo"  />
+  <img width="4" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=black&style=for-the-badge" height="25" alt="php logo"  />
+</div>
 
-## Installation & Usage
+<h2 align="left">🔍 Where to find me</h2>
 
-Clone the repository:
+<div align="left">
+  <a href="mailto:ulisesaucedo.se04@gmail.com" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
+  </a>
+  <a href="https://www.linkedin.com/in/ulises-saucedo" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+  </a>
+  <a href="https://x.com/6GinT" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="twitter logo"  />
+  </a>
+  <a href="https://codepen.io/Ulises-Saucedo-04" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Codepen&logo=codepen&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="codepen logo"  />
+  </a>
+</div>
 
-```bash
-git clone https://github.com/6GinT0/Portafolio.git
-```
+<br clear="both">
 
-Navigate to the project directory:
+<h2 align="left">⚡Recently activity</h2>
 
-```bash
-cd MyPortfolio
-```
+<p>I really enjoy listening to music while I do things and the NBA.</p>
 
-Install dependencies:
+<p align="center">
+  <a href="https://github.com/kittinan/spotify-github-profile">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31jtigmox3s3v2ojvdvx7ji5bom4&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false">
+  </a>
+</p>
 
-```bash
- npm install
-```
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://open.spotify.com/user/31jtigmox3s3v2ojvdvx7ji5bom4">
+        <img src="https://spotify-recently-played-readme.vercel.app/api?user=31jtigmox3s3v2ojvdvx7ji5bom4&count=5&unique=true" alt="Spotify recently played" />
+      </a>
+    </td>
+    <td width="55%" valign="top">
+      <img src="https://pbs.twimg.com/media/GUexhSTWAAAJZIM?format=jpg&name=medium"  />
+    </td>
+  </tr>
+</table>
 
-Configure environment variables in `.env`:
-
-```env
-NUXT_PUBLIC_BASE_URL=
-RESEND_API_KEY=
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Open in your browser:
-http://localhost:3000/
-
-## Contribution
-
-If you want to contribute to **My Portfolio**, please:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/new-feature`)
-3. Make your changes and commit (`git commit -m 'Add new feature'`)
-4. Submit a pull request
-
-## License
-
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute it.
-
----
-
-Developed with ❤ by Ulises
+<div>
+  <img style="100%" width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=tokyonight"  />
+</div>
