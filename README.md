@@ -60,9 +60,7 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="40%" valign="top" align="center">
-      <a href="https://open.spotify.com/user/31jtigmox3s3v2ojvdvx7ji5bom4">
-        <img src="https://spotify-recently-played-readme.vercel.app/api?user=31jtigmox3s3v2ojvdvx7ji5bom4&count=5&unique=true" alt="Spotify recently played" />
-      </a>
+       idk
     </td>
     <td width="55%" valign="top">
       <img src="https://pbs.twimg.com/media/GUexhSTWAAAJZIM?format=jpg&name=medium"  />
