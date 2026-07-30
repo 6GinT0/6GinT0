@@ -51,12 +51,6 @@
 
 <p>I really enjoy listening to music while I do things and the NBA.</p>
 
-<p align="center">
-  <a href="https://github.com/kittinan/spotify-github-profile">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31jtigmox3s3v2ojvdvx7ji5bom4&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false">
-  </a>
-</p>
-
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="40%" valign="top" align="center">
